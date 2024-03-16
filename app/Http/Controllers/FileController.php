@@ -37,7 +37,7 @@ public function upload(Request $request)
     // Получаем массив файлов для загрузки
     $files = $request->file('files');
 $responses = [];
-    // Обрабатываем каждый файл для загрузки
+    //// Обрабатываем каждый файл для загрузки
     foreach ($files as $file) {
         // Проверяем, является ли файл действительным
         if ($file->isValid()) {
